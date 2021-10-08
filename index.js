@@ -11,8 +11,8 @@ app
       const { title, category } = item;
       titleArray.push(title);
       // categoryArray.push(category);
-      if(!categoryArray.includes(category)) {
-        categoryArray.push(category)
+      if (!categoryArray.includes(category)) {
+        categoryArray.push(category);
       }
     });
     titleArray.sort();
@@ -54,6 +54,7 @@ app
         if (item.price < budget) {
           return item;
         }
+
       });
     }
 
